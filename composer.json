@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Systems51\\zf2ext\\": "src/"
+            "Zf2Extensions": "src/"
         },
         "classmap" : ["Module.php"]
     }

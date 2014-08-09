@@ -1,6 +1,6 @@
 <?php
 
-namespace systems51\zf2ext;
+namespace Zf2Extensions;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 

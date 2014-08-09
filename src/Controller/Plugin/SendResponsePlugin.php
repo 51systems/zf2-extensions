@@ -1,6 +1,6 @@
 <?php
 
-namespace Systems51\Controller\Plugin;
+namespace Zf2Extensions\Controller\Plugin;
 
 
 use Zend\Http\Response;
