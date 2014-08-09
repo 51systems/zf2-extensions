@@ -1,0 +1,28 @@
+{
+    "name": "51systems/zf2-extensions",
+    "description": "Collection of extensions to ZF2 that don't merit their own project.",
+    "license": "LGPL v3",
+    "type": "library",
+
+    "keywords": [
+        "results"
+    ],
+    "homepage": "https://github.com/51systems/zf2-extensions",
+    "authors": [
+        {
+            "name": "Dustin Thomson",
+            "email": "dthomson@51systems.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "zendframework/zend-mvc" : ">=2.2",
+        "zendframework/zend-http" : ">=2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Systems51\\zf2ext\\": "src/"
+        },
+        "classmap" : ["Module.php"]
+    }
+}
