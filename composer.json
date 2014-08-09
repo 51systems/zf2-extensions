@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Zf2Extensions": "src/"
+            "Zf2Extensions\\": "src/"
         },
         "classmap" : ["Module.php"]
     }
