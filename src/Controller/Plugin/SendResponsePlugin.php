@@ -14,7 +14,6 @@ use Zend\Stdlib\ResponseInterface;
  * Plugins inheriting from this superclass will be able to terminate the request by calling sendResponse()
  *
  * Class RequestTerminationPlugin
- * @package Application\Controller\Plugin
  */
 abstract class SendResponsePlugin extends AbstractPlugin
 {
