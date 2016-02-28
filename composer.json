@@ -1,28 +1,39 @@
 {
-    "name": "51systems/zf2-extensions",
-    "description": "Collection of extensions to ZF2 that don't merit their own project.",
-    "license": "LGPL v3",
-    "type": "library",
-
-    "keywords": [
-        "results"
-    ],
-    "homepage": "https://github.com/51systems/zf2-extensions",
-    "authors": [
-        {
-            "name": "Dustin Thomson",
-            "email": "dthomson@51systems.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3",
-        "zendframework/zend-mvc" : ">=2.2",
-        "zendframework/zend-http" : ">=2.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Zf2Extensions\\": "src/"
-        },
-        "classmap" : ["Module.php"]
+  "name": "51systems/zf2-extensions",
+  "description": "Collection of extensions to ZF2 that don't merit their own project.",
+  "license": "LGPL v3",
+  "type": "library",
+  "keywords": [
+    "results"
+  ],
+  "homepage": "https://github.com/51systems/zf2-extensions",
+  "authors": [
+    {
+      "name": "Dustin Thomson",
+      "email": "dthomson@51systems.com"
     }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "zendframework/zend-mvc": ">=2.2",
+    "zendframework/zend-http": ">=2.2"
+  },
+
+  "require-dev": {
+    "phpunit/PHPUnit": "~4.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Zf2Extensions\\": "src/"
+    },
+    "classmap": [
+      "Module.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "Zf2ExtensionsTest\\": "tests"
+    }
+  }
 }

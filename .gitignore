@@ -1,4 +1,5 @@
 .idea
+composer.lock
 
 # Composer files
 composer.phar
