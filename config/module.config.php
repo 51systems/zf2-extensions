@@ -1,9 +1,9 @@
 <?php
 
-return array(
-    'controller_plugins' => array(
-        'invokables' => array(
-            'sendResponse' => '\Zf2Extensions\Controller\Plugin\SendResponsePlugin',
-        )
-    ),
-);
+return [
+    'controller_plugins' => [
+        'invokables' => [
+            'sendResponse' => \Zf2Extensions\Controller\Plugin\SendResponsePlugin::class,
+        ]
+    ],
+];
