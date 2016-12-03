@@ -31,9 +31,10 @@ abstract class SendResponsePlugin extends AbstractPlugin
     {
         $e = $this->getEvent();
         $e->setResponse($response);
+        $e->setName(MvcEvent::EVENT_FINISH);
+        $e->stopPropagation(false);
 
-        $e->getApplication()->getEventManager()->trigger(MvcEvent::EVENT_FINISH, $e);
-        exit();
+        $e->getApplication()->getEventManager()->triggerEvent($e);
     }
 
 
