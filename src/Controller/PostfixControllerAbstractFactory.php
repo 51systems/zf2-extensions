@@ -1,5 +1,7 @@
 <?php
+namespace Zf2Extensions\Controller;
 
+use Interop\Container\ContainerInterface;
 use Zend\Mvc\Controller\LazyControllerAbstractFactory;
 
 /**
@@ -15,7 +17,7 @@ use Zend\Mvc\Controller\LazyControllerAbstractFactory;
  */
 class PostfixControllerAbstractFactory extends LazyControllerAbstractFactory
 {
-    public function __invoke(\Interop\Container\ContainerInterface $container, $requestedName, array $options = null)
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         if (!class_exists($requestedName)) {
             $postfixClass = $requestedName . 'Controller';
